@@ -10,6 +10,18 @@ Using an unordered_set for quick lookups, it iterates through all possible binar
 and returns the first one not present in the input.
 */
 
+// Time Complexity:
+
+// Converting an integer to a binary string of lengthntakesO(n).
+// We iterate over at mostO(2^n)numbers, making the worst-case complexityO(n * 2^n).
+// Hash lookups takeO(1)on average.
+// Space Complexity:
+
+// Storingnbinary strings in anunordered_settakesO(n)space.
+// The additional space for the result string isO(n).
+// Overall, the space complexity isO(n).
+
+
 class Solution {
 public:
     // Converts an integer to a binary string of given 'digits' length
